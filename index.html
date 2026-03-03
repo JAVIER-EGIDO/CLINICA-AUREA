@@ -408,12 +408,26 @@
             <p>&copy; 2026 Clínica Aurea. Todos los derechos reservados.</p>
         </div>
     </footer>
-
-    <!-- Sticky WhatsApp -->
-    <a href="https://wa.me/34600000000?text=Hola,%20deseo%20solicitar%20una%20valoración%20en%20Clínica%20Aurea" target="_blank" class="whatsapp-btn" aria-label="Contactar por WhatsApp">
-        <i class="ph-fill ph-whatsapp-logo"></i>
-    </a>
+    <script src="script.js"></script>
+    <script>
+      (function(d,t) {
+        var BASE_URL="https://pruebamodulo5-chatwoot.qgpnj2.easypanel.host";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        g.async = true;
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.chatwootSDK.run({
+            websiteToken: 'WaffpU7REChssNr4ZkBUCk8g',
+            baseUrl: BASE_URL
+          })
+        }
+      })(document,"script");
+    </script>
 
     <script src="script.js"></script>
 </body>
 </html>
+</body>
+</html>
+
