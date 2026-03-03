@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clínica Aurea - Medicina Estética y Cirugía Avanzada en Madrid con enfoque médico y resultados naturales.">
+    <title>Clínica Aurea | Medicina Estética y Cirugía Avanzada</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Icons (Phosphor) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Preloader WOW Effect -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <h1 class="logo-text aurea-gold">AUREA</h1>
+            <p>Medical Aesthetics</p>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#hero">AUREA</a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#sobre-nosotros" class="nav-link">Filosofía</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#equipo" class="nav-link">Equipo</a></li>
+                    <li><a href="#instalaciones" class="nav-link">Instalaciones</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="#contacto" class="btn btn-primary">Pedir Cita</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="assets/hero.png" alt="Interior de Clínica Aurea, estética minimalista y de lujo" class="hero-img" onerror="this.src='https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80'">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content reveal">
+            <h1 class="hero-title">Medicina Estética y Cirugía Avanzada:<br><span class="highlight">Tu mejor versión, con naturalidad</span></h1>
+            <p class="hero-subtitle">Enfoque médico personalizado en el corazón de Chamartín.</p>
+            <a href="#contacto" class="btn btn-primary btn-lg">Solicitar Valoración 3D</a>
+        </div>
+    </section>
+
+    <!-- Sobre la Clínica -->
+    <section class="about section" id="sobre-nosotros">
+        <div class="container about-container reveal">
+            <div class="about-text">
+                <h2 class="section-title">La excelencia médica se une a la armonía estética.</h2>
+                <h3 class="section-subtitle">En Clínica Aurea, no transformamos rostros; revelamos su mejor versión.</h3>
+                <p>Bajo la dirección médica de la Dra. Laura Álvarez Montes, cirujana plástica con más de 15 años de trayectoria, Clínica Aurea nace con un propósito claro: alejar la estética de la artificiosidad para devolverla al terreno de la salud y el equilibrio.</p>
+                <p>Ubicados en el corazón de Chamartín, hemos diseñado un espacio donde la tecnología de vanguardia y el rigor quirúrgico conviven con una experiencia de paciente premium. Aquí, el tratamiento comienza con la escucha activa. No vendemos protocolos estandarizados; aplicamos criterio médico para diseñar planes de rejuvenecimiento y cirugía que respetan tu anatomía y tu identidad.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/doctor.png" alt="Dra. Laura Álvarez Montes" onerror="this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80'">
+                <div class="experience-badge">
+                    <span class="number">+15</span>
+                    <span class="text">Años de<br>Experiencia</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciadores -->
+    <section class="differentiators section-light" id="diferenciadores">
+        <div class="container">
+            <div class="diff-grid reveal">
+                <div class="diff-card">
+                    <i class="ph ph-stethoscope diff-icon"></i>
+                    <h3>Criterio Médico vs Venta</h3>
+                    <p>Anteponemos tu salud y resultados a largo plazo sobre cualquier interés comercial. Diagnósticos honestos y prescriptivos.</p>
+                </div>
+                <div class="diff-card">
+                    <i class="ph ph-sparkle diff-icon"></i>
+                    <h3>Resultados Naturales</h3>
+                    <p>Filosofía basada en la estructura y proporción anatómica. Mejoramos tu aspecto sin alterar tu esencia.</p>
+                </div>
+                <div class="diff-card">
+                    <i class="ph ph-clock diff-icon"></i>
+                    <h3>Seguimiento 24/7</h3>
+                    <p>Acompañamiento integral post-tratamiento. Línea médica directa para tu absoluta tranquilidad en todo momento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Grid -->
+    <section class="services section" id="servicios">
+        <div class="container">
+            <div class="section-header center reveal">
+                <h2 class="section-title">Nuestra Cartera de Tratamientos</h2>
+                <p>Protocolos médicos de alta precisión para resultados excepcionales.</p>
+            </div>
+            
+            <div class="services-grid reveal">
+                
+                <!-- Card 1 -->
+                <div class="service-card">
+                    <div class="service-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80" alt="Medicina Estética Facial">
+                        <div class="service-hover">
+                            <button class="btn btn-outline-light">Saber más</button>
+                        </div>
+                        <span class="top-tag">Tratamiento Top</span>
+                    </div>
+                    <div class="service-info">
+                        <h3>Medicina Estética Facial</h3>
+                        <ul class="service-list">
+                            <li><strong>Armonización Hialurónico:</strong> Reposición de volúmenes con micro-cánula.</li>
+                            <li><strong>Neuromodulación Premium:</strong> Suavizado arrugas manteniendo movilidad natural.</li>
+                            <li><strong>Rinomodelación Avanzada:</strong> Corrección sin cirugía en 20 minutos.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card">
+                    <div class="service-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80" alt="Calidad de Piel">
+                        <div class="service-hover">
+                            <button class="btn btn-outline-light">Saber más</button>
+                        </div>
+                    </div>
+                    <div class="service-info">
+                        <h3>Calidad de Piel y Regeneración</h3>
+                        <ul class="service-list">
+                            <li><strong>Lifting con HIFU:</strong> Tensado profundo sin incisiones.</li>
+                            <li><strong>Protocolo Despigmentante:</strong> Peelings médicos de grado IV.</li>
+                            <li><strong>Bioestimulación PRP:</strong> Regeneración celular profunda.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card">
+                    <div class="service-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&q=80" alt="Cirugía de Autor">
+                        <div class="service-hover">
+                            <button class="btn btn-outline-light">Saber más</button>
+                        </div>
+                        <span class="top-tag">Tratamiento Top</span>
+                    </div>
+                    <div class="service-info">
+                        <h3>Unidad de Cirugía de Autor</h3>
+                        <ul class="service-list">
+                            <li><strong>Blefaroplastia:</strong> Mirada descansada y joven.</li>
+                            <li><strong>Aumento Pecho Ergonómico:</strong> Prótesis de última generación.</li>
+                            <li><strong>Liposucción HD:</strong> Escultura corporal atlética.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="service-card">
+                    <div class="service-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1512413914594-554162e24022?auto=format&fit=crop&q=80" alt="Remodelación Corporal">
+                        <div class="service-hover">
+                            <button class="btn btn-outline-light">Saber más</button>
+                        </div>
+                    </div>
+                    <div class="service-info">
+                        <h3>Remodelación Corporal</h3>
+                        <ul class="service-list">
+                            <li><strong>Mommy Makeover:</strong> Programa integral post-parto.</li>
+                            <li><strong>Radiofrecuencia Médica:</strong> Tratamiento flacidez térmico.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia del Paciente -->
+    <section class="experience section-light" id="experiencia">
+        <div class="container reveal">
+            <div class="section-header center">
+                <h2 class="section-title">La Experiencia Aurea</h2>
+                <p>Un recorrido diseñado para tu máxima tranquilidad y resultados óptimos.</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot">1</div>
+                    <div class="timeline-content">
+                        <h4>Valoración y Escáner 3D</h4>
+                        <p>Análisis exhaustivo de tus proporciones anatómicas mediante tecnología 3D de alta precisión.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">2</div>
+                    <div class="timeline-content">
+                        <h4>Diagnóstico Médico</h4>
+                        <p>Plan terapéutico personalizado, diseñado por cirujanos y médicos especialistas sin presiones comerciales.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">3</div>
+                    <div class="timeline-content">
+                        <h4>Tratamiento Premium</h4>
+                        <p>Ejecución clínica en un entorno de máximo confort, empleando aparatología e insumos de primer nivel.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">4</div>
+                    <div class="timeline-content">
+                        <h4>Seguimiento y Mantenimiento</h4>
+                        <p>Programa de revisiones periódicas para garantizar la durabilidad y evolución natural de los resultados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before / After Slider -->
+    <section class="before-after section">
+        <div class="container reveal">
+            <div class="section-header center">
+                <h2 class="section-title">Resultados que Hablan por Sí Solos</h2>
+                <p>Desliza para descubrir la mejora natural tras nuestros protocolos.</p>
+            </div>
+            
+            <div class="ba-slider-container">
+                <!-- After Image (Background) -->
+                <div class="ba-image ba-after">
+                    <img src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&q=80" alt="Después del tratamiento">
+                    <span class="ba-label label-after">Después</span>
+                </div>
+                <!-- Before Image (Overlay) -->
+                <div class="ba-image ba-before" id="ba-before-img">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80" alt="Antes del tratamiento" style="filter: grayscale(40%) contrast(90%);">
+                    <span class="ba-label label-before">Antes</span>
+                </div>
+                <!-- Control Input range -->
+                <input type="range" class="ba-slider" min="0" max="100" value="50" aria-label="Porcentaje de visibilidad del antes y después" id="ba-slider-input">
+                <div class="ba-slider-line" id="ba-slider-line">
+                    <div class="ba-slider-button"><i class="ph ph-arrows-left-right"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instalaciones Gallery (Simulated) -->
+    <section class="facilities section-light" id="instalaciones">
+        <div class="container reveal">
+            <div class="section-header center">
+                <h2 class="section-title">Instalaciones de Vanguardia</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80" alt="Recepción"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1586518175510-91a563fbc1ee?auto=format&fit=crop&q=80" alt="Sala de Espera"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&q=80" alt="Suite de Valoración 3D"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section" id="faq">
+        <div class="container reveal">
+            <div class="section-header center">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+            </div>
+            <div class="accordion">
+                <details class="accordion-item" name="faq">
+                    <summary class="accordion-header">
+                        ¿Cómo sé si mi resultado será natural? <i class="ph ph-caret-down"></i>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Nuestra filosofía se basa en la "Estructura y Proporción". Realizamos una valoración inicial con escáner facial 3D para proyectar cambios que armonicen con tus rasgos, evitando excesos de volumen o expresiones congeladas.</p>
+                    </div>
+                </details>
+
+                <details class="accordion-item" name="faq">
+                    <summary class="accordion-header">
+                        ¿Qué seguridad ofrecen en las cirugías? <i class="ph ph-caret-down"></i>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Todas las cirugías mayores se realizan en hospitales privados concertados de primer nivel en Madrid, con equipo de anestesia propio y seguimiento postoperatorio presencial y telefónico las 24 horas.</p>
+                    </div>
+                </details>
+
+                <details class="accordion-item" name="faq">
+                    <summary class="accordion-header">
+                        ¿Cuál es el tiempo de recuperación? <i class="ph ph-caret-down"></i>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Depende del tratamiento. En medicina estética (inyectables), la incorporación es inmediata. En cirugías como la Blefaroplastia o el Lip Lift, el tiempo medio es de 7 a 10 días. Te entregamos un kit de post-cuidado exclusivo en tu primera revisión.</p>
+                    </div>
+                </details>
+
+                <details class="accordion-item" name="faq">
+                    <summary class="accordion-header">
+                        ¿Es necesaria una cita previa para valoración? <i class="ph ph-caret-down"></i>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Sí. Para garantizar la privacidad y el tiempo que cada diagnóstico requiere, todas nuestras consultas son bajo cita previa. La primera valoración es realizada siempre por un médico o cirujano especialista.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA & Contact Form -->
+    <section class="cta section-light" id="contacto">
+        <div class="container reveal">
+            <div class="cta-card">
+                <div class="cta-text">
+                    <h2 class="section-title">Tu camino hacia un cambio seguro comienza aquí.</h2>
+                    <p>Agenda una valoración diagnóstica con nuestro equipo médico y recibe un plan de tratamiento honesto, detallado y sin compromisos.</p>
+                </div>
+                <div class="cta-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" name="name" placeholder="Ej. Ana García" required>
+                            <span class="error-msg">Por favor, ingresa tu nombre</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono de contacto</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Ej. +34 600 000 000" pattern="[0-9\+ ]+" required>
+                            <span class="error-msg">Ingresa un número válido</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Motivo de consulta</label>
+                            <select id="interest" name="interest" required>
+                                <option value="" disabled selected>Selecciona una opción...</option>
+                                <option value="facial">Medicina Estética Facial</option>
+                                <option value="cirugia">Cirugía Plástica</option>
+                                <option value="piel">Calidad de Piel</option>
+                                <option value="corporal">Remodelación Corporal</option>
+                            </select>
+                            <span class="error-msg">Selecciona un motivo</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Solicitar Cita Prioritaria</button>
+                    </form>
+                    <div class="form-success" id="form-success" style="display: none;">
+                        <i class="ph-fill ph-check-circle" style="color: #D4AF37; font-size: 3rem; margin-bottom: 1rem;"></i>
+                        <h3>¡Solicitud recibida!</h3>
+                        <p>Nos pondremos en contacto contigo a la mayor brevedad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <h2 class="logo-text">AUREA</h2>
+                <p>La excelencia médica no es una opción, es nuestro estándar.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Clínica</h4>
+                <ul>
+                    <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+                    <li><a href="#equipo">Dra. Laura Álvarez</a></li>
+                    <li><a href="#instalaciones">Instalaciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Tratamientos</h4>
+                <ul>
+                    <li><a href="#servicios">Estética Facial</a></li>
+                    <li><a href="#servicios">Calidad de Piel</a></li>
+                    <li><a href="#servicios">Cirugía de Autor</a></li>
+                    <li><a href="#servicios">Remodelación Corporal</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-col">
+                <h4>Contacto</h4>
+                <p><i class="ph ph-map-pin"></i> Av. Dr. Fleming 42, Madrid</p>
+                <p><i class="ph ph-phone"></i> +34 912 345 678</p>
+                <p><i class="ph ph-envelope"></i> info@clinicaaurea.com</p>
+                <p class="registry"><small>Registro Sanitario CS-EST-48231</small></p>
+                <p><small>L-V: 10:00 - 20:00</small></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Clínica Aurea. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Sticky WhatsApp -->
+    <a href="https://wa.me/34600000000?text=Hola,%20deseo%20solicitar%20una%20valoración%20en%20Clínica%20Aurea" target="_blank" class="whatsapp-btn" aria-label="Contactar por WhatsApp">
+        <i class="ph-fill ph-whatsapp-logo"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
