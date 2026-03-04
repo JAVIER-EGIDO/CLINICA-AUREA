@@ -145,3 +145,47 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+/* =========================================
+   ENVÍO DEL FORMULARIO CON FORMSPREE
+   ========================================= */
+const contactForm = document.getElementById('contact-form');
+const formSuccess = document.getElementById('form-success');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault(); // Evita que el navegador salte a otra página
+
+        // Cambiar el texto del botón mientras carga
+        const btn = contactForm.querySelector('button[type="submit"]');
+        const originalText = btn.innerText;
+        btn.innerText = 'Enviando...';
+        btn.disabled = true;
+
+        const formData = new FormData(contactForm);
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                // Si todo va bien: ocultamos formulario y mostramos mensaje de éxito dorado
+                contactForm.style.display = 'none';
+                formSuccess.style.display = 'block';
+                contactForm.reset();
+            } else {
+                alert('Hubo un problema al enviar tu solicitud. Inténtalo de nuevo.');
+                btn.innerText = originalText;
+                btn.disabled = false;
+            }
+        } catch (error) {
+            alert('Error de conexión. Por favor, revisa tu internet.');
+            btn.innerText = originalText;
+            btn.disabled = false;
+        }
+    });
+}
