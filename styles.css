@@ -975,4 +975,46 @@ body {
 h2, h3, h4, .aurea-gold {
     color: #D4AF37; /* Dorado Aurea */
 }
+/* =========================================
+   CORRECCIÓN MODO OSCURO (FAQ Y CONTACTO)
+   ========================================= */
+
+/* 1. Preguntas Frecuentes (FAQ) */
+.accordion-item {
+    background-color: #232629; /* Fondo grafito */
+    border: 1px solid rgba(212, 175, 55, 0.2); /* Borde dorado suave */
+    color: #e0e0e0;
+}
+
+.accordion-header {
+    color: #D4AF37; /* Texto dorado */
+}
+
+/* 2. Tarjeta de Contacto */
+.cta-card {
+    background-color: #232629;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.cta-text p {
+    color: #c0c0c0; /* Gris claro para que se lea bien */
+}
+
+/* 3. Cajas de texto del formulario */
+.contact-form input, 
+.contact-form select {
+    background-color: #121416; /* Fondo de los inputs muy oscuro */
+    color: #ffffff; /* Texto que escribe el usuario en blanco */
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.contact-form label {
+    color: #D4AF37; /* Etiquetas en dorado */
+}
+
+/* Evitar que el fondo blanco de autofill de Chrome rompa el diseño */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #121416 inset !important;
+    -webkit-text-fill-color: white !important;
+}
 
