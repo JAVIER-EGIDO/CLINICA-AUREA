@@ -902,7 +902,45 @@ ul {
     .header-cta { display: none; }
     
     .diff-grid, .services-grid, .gallery-grid {
+       /* 1. Fondo general Gris Grafito Claro */
+body {
+    background-color: #1a1c1e; /* Gris grafito oscuro/claro balanceado */
+    color: #f5f5f5;
+}
+
+/* 2. Estilo de los bloques (Cards) */
+.service-card, .diff-card {
+    background: #25282a; /* Un tono más claro que el fondo para contraste */
+    border: 1px solid rgba(212, 175, 55, 0.1); /* Borde dorado muy sutil */
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* 3. Efecto de iluminación por detrás (Hover) */
+.service-card:hover, .diff-card:hover {
+    transform: translateY(-10px);
+    border-color: #D4AF37; /* Brillo dorado en el borde */
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.2); /* Resplandor suave */
+}
+
+/* 4. El "iluminado" interno */
+.service-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle at center, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+}
+
+.service-card:hover::before {
+    opacity: 1;
+}
         grid-template-columns: 1fr;
     }
     .hero-title { font-size: 2.5rem; }
 }
+
