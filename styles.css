@@ -943,4 +943,36 @@ body {
     }
     .hero-title { font-size: 2.5rem; }
 }
+/* Fondo base Grafito */
+body {
+    background-color: #121416; /* Grafito muy oscuro de fondo */
+    color: #e0e0e0;
+}
+
+/* Secciones con contraste Gris Grafito Claro */
+.section-light {
+    background-color: #1c1f21 !important; /* Un tono más claro para diferenciar secciones */
+}
+
+/* Efecto en los bloques (Cards) */
+.service-card, .diff-card {
+    background: #232629; 
+    border: 1px solid rgba(212, 175, 55, 0.1); 
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    z-index: 1;
+}
+
+/* Iluminación trasera al pasar el ratón (Hover) */
+.service-card:hover, .diff-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(212, 175, 55, 0.6);
+    /* El "resplandor" que pediste */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(212, 175, 55, 0.15);
+}
+
+/* Ajuste del texto para que brille sobre el fondo oscuro */
+h2, h3, h4, .aurea-gold {
+    color: #D4AF37; /* Dorado Aurea */
+}
 
