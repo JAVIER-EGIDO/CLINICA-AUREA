@@ -323,38 +323,30 @@
                     <p>Agenda una valoración diagnóstica con nuestro equipo médico y recibe un plan de tratamiento honesto, detallado y sin compromisos.</p>
                 </div>
                 <div class="cta-form-container">
-                    <form id="contact-form" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Nombre completo</label>
-                            <input type="text" id="name" name="name" placeholder="Ej. Ana García" required>
-                            <span class="error-msg">Por favor, ingresa tu nombre</span>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Teléfono de contacto</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Ej. +34 600 000 000" pattern="[0-9\+ ]+" required>
-                            <span class="error-msg">Ingresa un número válido</span>
-                        </div>
-                        <div class="form-group">
-                            <label for="interest">Motivo de consulta</label>
-                            <select id="interest" name="interest" required>
-                                <option value="" disabled selected>Selecciona una opción...</option>
-                                <option value="facial">Medicina Estética Facial</option>
-                                <option value="cirugia">Cirugía Plástica</option>
-                                <option value="piel">Calidad de Piel</option>
-                                <option value="corporal">Remodelación Corporal</option>
-                            </select>
-                            <span class="error-msg">Selecciona un motivo</span>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Solicitar Cita Prioritaria</button>
-                    </form>
-                    <div class="form-success" id="form-success" style="display: none;">
-                        <i class="ph-fill ph-check-circle" style="color: #D4AF37; font-size: 3rem; margin-bottom: 1rem;"></i>
-                        <h3>¡Solicitud recibida!</h3>
-                        <p>Nos pondremos en contacto contigo a la mayor brevedad.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+                   <form id="contact-form" class="contact-form" action="https://formspree.io/f/mvzbewao" method="POST">
+    <div class="form-group">
+        <label for="name">Nombre completo</label>
+        <input type="text" id="name" name="name" placeholder="Ej. Ana García" required>
+        <span class="error-msg">Por favor, ingresa tu nombre</span>
+    </div>
+    <div class="form-group">
+        <label for="phone">Teléfono de contacto</label>
+        <input type="tel" id="phone" name="phone" placeholder="Ej. +34 600 000 000" pattern="[0-9\+ ]+" required>
+        <span class="error-msg">Ingresa un número válido</span>
+    </div>
+    <div class="form-group">
+        <label for="interest">Motivo de consulta</label>
+        <select id="interest" name="interest" required>
+            <option value="" disabled selected>Selecciona una opción...</option>
+            <option value="facial">Medicina Estética Facial</option>
+            <option value="cirugia">Cirugía Plástica</option>
+            <option value="piel">Calidad de Piel</option>
+            <option value="corporal">Remodelación Corporal</option>
+        </select>
+        <span class="error-msg">Selecciona un motivo</span>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Solicitar Cita Prioritaria</button>
+</form>
     </section>
 
     <!-- Footer -->
@@ -422,6 +414,7 @@
 </html>
 </body>
 </html>
+
 
 
 
